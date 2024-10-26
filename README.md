@@ -4,21 +4,6 @@
 
 A comprehensive benchmarking suite for evaluating and visualizing different Fibonacci number calculation strategies. This project allows you to compare the performance of various algorithms, generate detailed reports, and visualize the results with customizable plots.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-    - [Running the Benchmark](#running-the-benchmark)
-    - [Visualizing Results](#visualizing-results)
-- [Project Structure](#project-structure)
-- [Supported Strategies](#supported-strategies)
-- [Configuration](#configuration)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
 ## Features
 
 - **Benchmark Multiple Strategies**: Easily add and benchmark different Fibonacci calculation algorithms.
