@@ -1,10 +1,22 @@
-import time
-import json
 import csv
+import json
 import logging
+import time
 from concurrent.futures import ThreadPoolExecutor, TimeoutError
-from tqdm import tqdm
 from typing import List, Callable, Dict, Any
+
+from tqdm import tqdm
+
+from src.Strategies.GMP.GMPDoublingFibonacci import GMPDoublingFibonacci
+from src.Strategies.GMP.GMPImprovedMatrixFibonnaci import GMPImprovedMatrixFibonnaci
+from src.Strategies.GMP.GMPIterativeFibonacci import GMPIterativeFibonacci
+from src.Strategies.GMP.GMPMatrixFibonacci import GMPMatrixFibonacci
+from src.Strategies.Primitive.DoublingFibonacci import DoublingFibonacci
+from src.Strategies.Primitive.ImprovedMatrixFibonnaci import ImprovedMatrixFibonnaci
+from src.Strategies.Primitive.IterativeFibonacci import IterativeFibonacci
+from src.Strategies.Primitive.MatrixFibonacci import MatrixFibonacci
+from src.Strategies.Primitive.RecursiveFibonacci import RecursiveFibonacci
+
 
 class FibonacciBenchmark:
     """
@@ -139,6 +151,7 @@ class FibonacciBenchmark:
 
         logging.info("Benchmark completed.")
 
+
 def run_fibonacci_benchmark(max_n: int, spread: int, timeout: float, strategies: List[Any],
                             csv_filename: str, json_filename: str) -> None:
     """
@@ -156,16 +169,14 @@ def run_fibonacci_benchmark(max_n: int, spread: int, timeout: float, strategies:
     benchmark = FibonacciBenchmark(max_n=max_n, spread=spread, timeout=timeout)
     benchmark.run_benchmark(strategies, csv_filename, json_filename)
 
+
 # Example usage:
 if __name__ == "__main__":
-    from src.Strategies.GMP.GMPDoublingFibonacci import GMPDoublingFibonacci
-    from src.Strategies.GMP.GMPDoublingFibonacciOptimized import GMPDoublingFibonacciOptimized
-
     run_fibonacci_benchmark(
-        max_n=10000000,
-        spread=2000,
-        timeout=1,
-        strategies=[GMPDoublingFibonacciOptimized(), GMPDoublingFibonacci()],
-        csv_filename='results.csv',
-        json_filename='results.json'
+        max_n=50001,
+        spread=1,
+        timeout=60,
+        strategies=[RecursiveFibonacci(), IterativeFibonacci(), MatrixFibonacci(), ImprovedMatrixFibonnaci(), DoublingFibonacci(), GMPIterativeFibonacci(), GMPMatrixFibonacci(), GMPImprovedMatrixFibonnaci(), GMPDoublingFibonacci(), GMPImprovedMatrixFibonnaci()],
+        csv_filename='data.csv',
+        json_filename='data.json'
     )
