@@ -9,8 +9,8 @@ from src.Strategies.GMP.GMPMatrixFibonacci import GMPMatrixFibonacci
 from src.Strategies.GMP.GMPDoublingFibonacci import GMPDoublingFibonacci
 from src.Strategies.Primitive.DoublingFibonacci import DoublingFibonacci
 from src.Strategies.GMP.GMPDoublingFibonacciOptimized import GMPDoublingFibonacciOptimized
-from src.Strategies.Primitive.ModularArithmeticFibonacci import ModularArithmeticFibonacci
-from src.Strategies.GMP.GMPModularArithmeticFibonacci import GMPModularArithmeticFibonacci
+from src.Strategies.Primitive.ImprovedMatrixFibonnaci import ImprovedMatrixFibonnaci
+from src.Strategies.GMP.GMPImprovedMatrixFibonnaci import GMPImprovedMatrixFibonnaci
 
 # Configuration
 MAX_FIB_NUMBER = 10000  # Adjust this to change the number of Fibonacci numbers to compare
@@ -70,8 +70,8 @@ class TestFibonacciStrategies(unittest.TestCase):
             GMPDoublingFibonacci(),
             DoublingFibonacci(),
             GMPDoublingFibonacciOptimized(),
-            ModularArithmeticFibonacci(),
-            GMPModularArithmeticFibonacci(),
+            ImprovedMatrixFibonnaci(),
+            GMPImprovedMatrixFibonnaci(),
             GMPMatrixFibonacci(),
             GMPIterativeFibonacci(),
         ]

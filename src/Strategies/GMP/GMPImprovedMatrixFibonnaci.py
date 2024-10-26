@@ -3,11 +3,11 @@ import gmpy2
 from src.Strategies.FibonacciStrategy import FibonacciStrategy
 
 
-class GMPModularArithmeticFibonacci(FibonacciStrategy):
+class GMPImprovedMatrixFibonnaci(FibonacciStrategy):
     """
     Implements the modular arithmetic method for calculating Fibonacci numbers using GMP.
 
-    This method combines the optimizations of ModularArithmeticFibonacci with GMP's
+    This method combines the optimizations of ImprovedMatrixFibonnaci with GMP's
     arbitrary-precision arithmetic. It provides the best performance for calculating
     extremely large Fibonacci numbers.
 

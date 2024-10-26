@@ -1,7 +1,7 @@
 from src.Strategies.FibonacciStrategy import FibonacciStrategy
 
 
-class ModularArithmeticFibonacci(FibonacciStrategy):
+class ImprovedMatrixFibonnaci(FibonacciStrategy):
     """
     Implements the modular arithmetic method for calculating Fibonacci numbers.
 
