@@ -147,7 +147,10 @@ You can configure the benchmarking parameters by modifying the `run_fibonacci_be
 - **csv_filename**: Filename for exporting results to CSV.
 - **json_filename**: Filename for exporting results to JSON.
 
+
 ---
+
+[Read more about this on my blog](https://www.lanfermann.dev/blogs/the-billionth-fibonacci-number)
 
 <p align="center">
   Made with ❤️ by <a href="https://lanfermann.dev">Justin Lanfermann</a>
