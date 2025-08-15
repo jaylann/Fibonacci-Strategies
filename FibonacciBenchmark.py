@@ -176,7 +176,9 @@ if __name__ == "__main__":
         max_n=50001,
         spread=1,
         timeout=60,
-        strategies=[RecursiveFibonacci(), IterativeFibonacci(), MatrixFibonacci(), ImprovedMatrixFibonnaci(), DoublingFibonacci(), GMPIterativeFibonacci(), GMPMatrixFibonacci(), GMPImprovedMatrixFibonnaci(), GMPDoublingFibonacci(), GMPImprovedMatrixFibonnaci()],
+        strategies=[RecursiveFibonacci(), IterativeFibonacci(), MatrixFibonacci(), ImprovedMatrixFibonnaci(),
+                    DoublingFibonacci(), GMPIterativeFibonacci(), GMPMatrixFibonacci(), GMPImprovedMatrixFibonnaci(),
+                    GMPDoublingFibonacci(), GMPImprovedMatrixFibonnaci()],
         csv_filename='data.csv',
         json_filename='data.json'
     )
