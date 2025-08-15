@@ -146,3 +146,9 @@ You can configure the benchmarking parameters by modifying the `run_fibonacci_be
 - **strategies**: List of strategy instances to include in the benchmark.
 - **csv_filename**: Filename for exporting results to CSV.
 - **json_filename**: Filename for exporting results to JSON.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://lanfermann.dev">Justin Lanfermann</a>
+</p>
